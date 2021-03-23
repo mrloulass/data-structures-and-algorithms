@@ -12,8 +12,8 @@ const addOne = (arr) => {
   // need a array of numbers
   const answerNumber = [];
   // forEach loop over input array
-  arr.forEach((value, i) => {
-    // push mew value into array
+  arr.forEach(value => {
+    // push new value into array
     answerNumber.push(value + 1);
   });
   // return
@@ -32,7 +32,7 @@ const addExclamation = (arr) => {
   // add an array of strings
   const answerWithExclamation = [];
   // forEach loop over input array
-  arr.forEach((value) => {
+  arr.forEach(value => {
     answerWithExclamation.push(`${value}!`);
 
   });
@@ -52,7 +52,7 @@ const allUpperCase = (arr) => {
   // add an array of strings
   const answerWithUpperCase = [];
   // forEach loop over input array
-  arr.forEach((value) => {
+  arr.forEach(value => {
     answerWithUpperCase.push(value.toUpperCase());
   });
   // return
@@ -79,7 +79,7 @@ function speaker(words, callback) {
   // an array of strings and callback function in a function
   const answerSpeaker = [];
   // forEach build new array of strings and each string modified by callback
-  words.forEach((value) => {
+  words.forEach(value => {
     // return all upper case and follow by '!'
     answerSpeaker.push(`${value.toUpperCase()}!`);
     callback();
@@ -104,17 +104,13 @@ Within the addNumbers function, invoke the callback function as many times as ne
 Return the modified array.
 ------------------------------------------------------------------------------------------------ */
 
-const addValues = (arr, value) => {
-  // add an array
-  const answerAddValues = [];
-  //pushes the value into the array
-  answerAddValues.push(arr, value);
-};
+const addValues = (arr, value) => arr.push(value);
 
 const addNumbers = (num, arr, times, callback) => {
-  arr.push(num, times);
-  callback(times);
-  return addValues;
+  for (let i = 0)
+  callback(arr, num);
+}
+  return arr;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -137,6 +133,13 @@ This function should use forEach to populate your grocery list based on the stor
 
 const createList = (availableItems) => {
   // Solution code here...
+  let groceryList = [];
+  availableItems.forEach((element) => {
+    if (element.available) {
+      groceryList.push(element.name);
+    }
+  });
+  return groceryList;
 };
 
 /* ------------------------------------------------------------------------------------------------
