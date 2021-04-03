@@ -22,8 +22,17 @@ function lower(str) {
 
 const updateAnimal = (arr, callback) => {
   // Solution code here...
-  arr.sort((a, b) => 
-  
+  //   1. long way to do this
+  // const newArray = [];
+  // arr.forEach(animal => {
+  //   let updatedAnimal = callback(animal);
+  //   newArray.push(updatedAnimal);
+  // });
+  // return newArray;
+  //  2. the best way to do this is use map array method
+  //    map creates and return a new way
+  //    forEach creates
+  return arr.map(callback);
 };
 
 /* ------------------------------------------------------------------------------------------------
