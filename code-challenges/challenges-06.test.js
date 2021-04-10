@@ -24,8 +24,7 @@ Returns: ['dyoll', 'eimaj'];
 
 const getNames = (arr) => {
   // Solution code here...
-  return arr.map();
- 
+  return arr.map(person => person.name.split('').reverse().join(''));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -76,6 +75,7 @@ console.log(a) prints { fullName: 'Octavia Estelle Butler', yearBorn: 1947 }
 
 const addBirthYearProperty = (obj, year) => {
   // Solution code here...
+  obj.yearBorn = year;
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -112,7 +112,7 @@ console.log(a) prints [1, 2, 3, 4]
 
 const append = (arr1, arr2) => {
   // Solution code here...
-  arr1.concat(arr2);
+  arr2.forEach(ban => arr1.push(ban));
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -172,7 +172,7 @@ xdescribe('Testing challenge 5', () => {
   });
 });
 
-xdescribe('Testing challenge 6', () => {
+describe('Testing challenge 6', () => {
   test('It should append the second array to the first', () => {
     const a = [1, 2, 3, 4];
     const b = [5, 6, 7, 8];
