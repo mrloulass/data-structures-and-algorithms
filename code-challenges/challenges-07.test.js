@@ -37,7 +37,7 @@ Write a function named removeThree that takes an index and an array. The functio
 
 const removeThree = (idx, arr) => {
   // Solution code here...
-  return arr.splice(2,3);
+  return arr.splice(2,9);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -67,6 +67,9 @@ For example, if the input is 'Welcome', the output will be:
 const howMuchPencil = (str) => {
   let result = [];
   // Solution code here...
+  for (let i = 0; i <= str.length; i++) {
+    result.push(str.slice(i));
+  }
   return result;
 };
 
@@ -128,6 +131,11 @@ const gruffaloCrumble = {
 const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
+  recipe.ingredients.forEach(ingredient => {
+    let withoutAmounts = ingredient.slice(ingredient.indexOf(' ') + 1);
+    let withoutUnits = withoutAmounts.slice(withoutAmounts.indexOf(' ') + 1);
+    result.push(withoutUnits);
+  });
   return result;
 };
 
