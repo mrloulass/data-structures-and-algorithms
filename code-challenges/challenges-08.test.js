@@ -107,10 +107,8 @@ Write a function named isCapitalized that takes in a string. This function shoul
 Return an array containing all the matches.
 ------------------------------------------------------------------------------------------------ */
 
-const isCapitalized = (str) => {
-  let regex = /[A-Z]\w*/g;
-  return str.match(regex);
-};
+const isCapitalized = (str) => str.match(/\b[A-Z]\w*\b/g) || [];
+
 
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 6
