@@ -43,7 +43,7 @@ If it does, return true. If not, return false.
 ------------------------------------------------------------------------------------------------ */
 
 const hasNumber = (string) => {
-  // Solution code here...
+  return /[A-Za-z]+\d+/.test(string);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -63,7 +63,7 @@ Note: if you ever need to validate an email using a regex in practice, the Inter
 ------------------------------------------------------------------------------------------------ */
 
 const validateEmail = (email) => {
-  // Solution code here...
+  return /^\w+(\.\w+)?@\w+\.(net|com|org)$/.test(email);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -88,7 +88,8 @@ Return either true or false.
 ------------------------------------------------------------------------------------------------ */
 
 const validatePhoneNumber = (phoneNumber) => {
-  // Solution code here...
+  //       maybe parens or not          maybe space/dash
+  return /^((\(\d\d\d\))|(\d\d\d))[ -]?\d\d\d[ -]?\d\d\d\d$/.test(phoneNumber);
 };
 
 /* ------------------------------------------------------------------------------------------------
