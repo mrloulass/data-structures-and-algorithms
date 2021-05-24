@@ -9,8 +9,7 @@ Write a function called addTwo that takes in an array and adds two to every valu
 const addTwo = (arr) => {
   // Solution code here...
   for (let i = 0; i < arr.length; i += 2);
-  return arr.filter(add => add[i] );
-
+  return arr.map(add => add + 2);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -62,6 +61,7 @@ For example, notInFirstArray([1,2,3], [1,2,3,4]) returns [4].
 
 const notInFirstArray = (forbiddenValues, arr) => {
   // Solution code here...
+  return arr.filter(notInFirst => !forbiddenValues.includes(notInFirst));
 };
 
 /* ------------------------------------------------------------------------------------------------
