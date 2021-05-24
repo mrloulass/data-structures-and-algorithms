@@ -13,6 +13,7 @@ You can assume that neither firstName nor lastName will be blank
 ------------------------------------------------------------------------------------------------ */
 const toLastNames = people => {
   // Solution code here...
+  return people.map(names => `${names.firstName} ${names.lastName}`);
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -132,6 +133,7 @@ Note: You must use reduce for this challenge. You may not use the built-in .reve
 
 const reversedString = (str) => {
   // Solution code here...
+  return str.split('').reduce((r, c)=> c + r, '');
 
 };
 
