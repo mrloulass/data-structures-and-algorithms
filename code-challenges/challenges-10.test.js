@@ -82,6 +82,7 @@ const grandTotal = (stores) => {
     ans.push(total);
   }
   return ans;
+
 };
 
 /* ------------------------------------------------------------------------------------------------
@@ -96,7 +97,7 @@ Write a function named salesData that uses forEach to iterate over the hourlySal
 
 const salesData = (hours, data) => {
   let ans = [];
-  hours.forEach((hour, index) => ans.push({sales: `${data[index]} cookies`, time: hour }));
+  hours.forEach((hour, index) => ans.push({ sales: `${data[index]} cookies`, time: hour }));
   // ans = hours.map((hour, index)=> ({sales: `${data[index]} cookies`, time: hour }));
   return ans;
 };
