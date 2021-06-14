@@ -9,7 +9,7 @@ Write a function named returnTen, takes in a string and uses split and splice to
 
 function returnTen(str) {
   let newSplit = str.split('');
-  return newSplit.splice(0, 1);
+  return newSplit.splice(0, 10);
   // Solution code here...
 }
 
