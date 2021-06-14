@@ -9,11 +9,12 @@ using the 'reduce' method.
 E.g. [4,2,7,5,9,2] -> 9
 ------------------------------------------------------------------------------------------------ */
 const maxInArray = (arr) => {
-  return arr.reduce((accumlator, currentValue) => accumlator + currentValue, Math.abs(0));
-  // Solution code here...
-
+  return arr.reduce((acc, val) => {
+    acc[0] = (acc[0] === undefined || val < acc[0]) ? val : acc[0],
+    acc[1] = (acc[1] === undefined || val > acc[1]) ? val : acc[1];
+    return acc;
+  }, []);
 };
-
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 2
 
