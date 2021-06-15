@@ -4,7 +4,7 @@
 
 ## Whiteboard Process
 
- - ![White-Board-Array-Reverse](/home/louis/codefellows/data-structures-and-algorithms/javascript/code-challenges/reverse-ll/array-reverse/array-reverse.png)
+ - ![White-Board-Array-Reverse](/array-reverse/array-reverse.png)
 
 ## Approach & Efficiency
 
