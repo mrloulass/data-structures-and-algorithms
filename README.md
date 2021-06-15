@@ -12,4 +12,11 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ### 401 Data Structures, Code Challenges
 
-- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+ - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+
+#### Table of Contents
+
+ - [Array-Reverse](javascript/code-challenges/reverse-ll/array-reverse/README.md)
+
+   - [Code Challenge: Class 01](https://canvas.instructure.com/courses/2873586/assignments/22248868)
+
