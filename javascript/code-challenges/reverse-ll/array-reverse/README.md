@@ -4,7 +4,7 @@
 
 ## Whiteboard Process
 
- - ![White-Board-Array-Reverse](./array-reverse/array-reverse.png)
+ - ![White-Board-Array-Reverse](array-reverse.png)
 
 ## Approach & Efficiency
 
