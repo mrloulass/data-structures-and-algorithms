@@ -16,14 +16,14 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 #### Table of Contents
 
-  1. [Array-Reverse](javascript/code-challenges/reverse-ll/array-reverse/README.md)
+ 1. [Array-Reverse](javascript/code-challenges/reverse-ll/array-reverse/README.md)
 
    - [Code Challenge: Class 01](https://canvas.instructure.com/courses/2873586/assignments/22248868)
    
-  2. [Array-Shift](javascript/code-challenges/reverse-ll/array-shift/README.md)
+ 2. [Array-Shift](javascript/code-challenges/reverse-ll/array-shift/README.md)
   
    - [Code Challenge: Class 02](https://canvas.instructure.com/courses/2873586/assignments/22248869)
 
-  3. [Array-Binary-Search](javascript/code-challenges/reverse-ll/array-binary-search/README.md)
+ 3. [Array-Binary-Search](javascript/code-challenges/reverse-ll/array-binary-search/README.md)
 
    - [Code Challenge: Class 03](https://canvas.instructure.com/courses/2873586/assignments/22248870)
