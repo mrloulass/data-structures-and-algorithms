@@ -5,6 +5,6 @@ const LinkedLilst = require('../index');
 
 describe('Linked List', () => {
   it('works', () => {
-    expect(true).toBeTruthy();
+    expect(null).toBeNull();
   });
 });
