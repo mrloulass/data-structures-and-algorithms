@@ -12,18 +12,25 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
 ### 401 Data Structures, Code Challenges
 
- - Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
+- Please follow the instructions specific to your 401 language, which can be found in the directory below, matching your course.
 
 #### Table of Contents
 
- 1. [Array-Reverse](javascript/code-challenges/reverse-ll/array-reverse/README.md)
+1. [Array-Reverse](javascript/code-challenges/reverse-ll/array-reverse/README.md)
 
-   - [Code Challenge: Class 01](https://canvas.instructure.com/courses/2873586/assignments/22248868)
+    - [Code Challenge: Class 01](https://canvas.instructure.com/courses/2873586/assignments/22248868)
    
- 2. [Array-Shift](javascript/code-challenges/reverse-ll/array-shift/README.md)
+2. [Array-Shift](javascript/code-challenges/reverse-ll/array-shift/README.md)
   
-   - [Code Challenge: Class 02](https://canvas.instructure.com/courses/2873586/assignments/22248869)
+    - [Code Challenge: Class 02](https://canvas.instructure.com/courses/2873586/assignments/22248869)
 
- 3. [Array-Binary-Search](javascript/code-challenges/reverse-ll/array-binary-search/README.md)
+3. [Array-Binary-Search](javascript/code-challenges/reverse-ll/array-binary-search/README.md)
 
-   - [Code Challenge: Class 03](https://canvas.instructure.com/courses/2873586/assignments/22248870)
+    - [Code Challenge: Class 03](https://canvas.instructure.com/courses/2873586/assignments/22248870)
+
+4. Code Challenge: Class 04: Whiteboard Interview
+
+5. [Linked List Implementation](javascript/linked-list/index.js)
+
+    - [Code Challenge: Class 05](https://canvas.instructure.com/courses/2873586/assignments/22248872)
+
