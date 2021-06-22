@@ -34,3 +34,7 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
     - [Code Challenge: Class 05](https://canvas.instructure.com/courses/2873586/assignments/22248872)
 
+6. [Linked List Insertions]()
+
+    - [Code Challenge: Class 06](https://canvas.instructure.com/courses/2873586/assignments/22248873)
+
