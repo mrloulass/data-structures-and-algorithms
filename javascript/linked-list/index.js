@@ -12,6 +12,30 @@ class LinkedList {
     this.head = null;
   }
 
+  append(value) {
+    let newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+    } else {
+      let endNode = this.head;
+      while (endNode.next !== null) {
+        endNode = endNode.next;
+      }
+      endNode.next = newNode;
+      return this.head;
+    }
+  }
+
+  // insertBefore(value, newVal) {
+  //   let newNode = new Node(newVal);
+  //   let current = 
+
+  // }
+
+  // insertAfter(value, newVal) {
+
+  // }
+
   insert(value) {
     let newNode = new Node(value);
     newNode.next = this.head;
@@ -47,5 +71,6 @@ list.head.next.next.next = D;
 list.insert('Z');
 list.includes();
 list.toString();
-
+list.append('Y');
+list.insertBefore('B', 'L');
 module.exports = LinkedList;
