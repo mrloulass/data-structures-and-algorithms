@@ -12,6 +12,20 @@ class LinkedList {
     this.head = null;
   }
 
+  insert(value) {
+    let newNode = new Node(value);
+    newNode.next = this.head;
+    this.head = newNode;
+    return this.head;
+  }
+
+  includes(value) {
+    let current = this.head;
+    while (current !== null) {
+      current = current.next;
+    }
+  }
+
   append(value) {
     let newNode = new Node(value);
     if (!this.head) {
@@ -26,51 +40,44 @@ class LinkedList {
     }
   }
 
-  // insertBefore(value, newVal) {
-  //   let newNode = new Node(newVal);
-  //   let current = 
-
-  // }
-
-  // insertAfter(value, newVal) {
-
-  // }
-
-  insert(value) {
-    let newNode = new Node(value);
-    newNode.next = this.head;
-    this.head = newNode;
-    return this.head;
-  }
-  includes(value) {
-    let current = this.head;
+  insertBefore(value, newVal) {
+    let newNode = new Node(newVal);
+    let current = value;
     while (current !== null) {
       current = current.next;
     }
+    if (!this.head) {
+      newNode = this.head;
+    }
+    newNode.next = current;
+    // return this.head;
   }
 }
 
+
 const list = new LinkedList();
 
-const A = new Node('A');
+let A = new Node('A');
 
 list.head = A;
 
-const B = new Node('B');
+let B = new Node('B');
 
 list.head.next = B;
 
-const C = new Node('C');
+let C = new Node('C');
 
 list.head.next.next = C;
 
-const D = new Node(false);
+let D = new Node(false);
 
 list.head.next.next.next = D;
 
-list.insert('Z');
 list.includes();
 list.toString();
+list.insert('Z');
 list.append('Y');
-list.insertBefore('B', 'L');
+// list.insertBefore('B', 'L');
+console.log(list.append('Y2'));
+
 module.exports = LinkedList;

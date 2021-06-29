@@ -38,3 +38,10 @@ Each day, you'll add one new file to this folder to do your work for the day's a
 
     - [Code Challenge: Class 06](https://canvas.instructure.com/courses/2873586/assignments/22248873)
 
+7.
+8.
+9. Code Challenge: Class 09: Whiteboard Interview
+
+10. [Stack and a Queue Implementation](javascript/code-challenges/StacksAndQueues/README.md)
+
+    - [Code Challenge: Class 10](https://canvas.instructure.com/courses/2873586/assignments/22248877)
