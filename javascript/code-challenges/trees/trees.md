@@ -6,7 +6,7 @@
 
 - ![Trees Image](Trees.png)
 
-## Challenge
+## Challenge 15
 
 - New Implementation
 
@@ -14,7 +14,7 @@
 
 ### Node
 
-- Create a Node class that has properties for the value stored in the node, the left child node, and the right child node.
+- Create a Node class that has properties for the value stored in the node, the left  child node, and the right child node.
 
 ### Binary Tree
 
@@ -36,6 +36,23 @@
         - Argument: value
         - Returns: boolean indicating whether or not the value is in the tree at least once.
 
+## Challenge 16
+
+- Extending an Implementation
+
+## Feature
+
+### Maximum Value
+
+- Write the following method for the Binary Tree class
+  - find maximum value
+  - Arguments: none
+  - Returns: number
+
+
 ## Links
 
 - [Binary Trees Javascript Code](binaryTrees.js)
+
+
+

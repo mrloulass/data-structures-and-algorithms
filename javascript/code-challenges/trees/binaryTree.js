@@ -63,7 +63,21 @@ class BinaryTree {
     };
     walk(this.root);
   }
+
+  maximumValue() {
+    const walk = (node) => {
+      if (walk(node.left) > node.value)
+        node.value = walk(node.left);
+
+      if (walk(node.right) > node.value);
+      node.value = walk(node.right);
+    };
+    return walk();
+  }
+
 }
+
+
 
 const bt = new BinaryTree();
 
@@ -87,6 +101,9 @@ bt.preOrder();
 
 console.log('In Order Traversal');
 bt.inOrder();
+
+console.log('Maximum Value', bt.maximumValue());
+
 
 class BinarySearchTree extends BinaryTree {
   constructor(root) {
