@@ -84,3 +84,5 @@ console.log(table.get('Mike'));
 
 console.log(table.contains('John'));
 console.log(table.contains('Peter'));
+
+module.exports = {HashTable, LinkedList, Node};
