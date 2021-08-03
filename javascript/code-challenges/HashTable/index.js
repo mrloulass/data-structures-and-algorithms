@@ -69,7 +69,31 @@ class HashTable {
     return this.buckets[hash] ? true : false;
   }
 
+  // finds the first word to occur more than once in a string
+  repeatedWord(str) {
+
+    // Creates an empty hashset
+    let hashSet = new Set();
+
+    // Traverse the input array from left to right
+    for (let i = 0; i <= str.length - 1; i++) {
+      let string = str[i];
+
+      // If element is already in hash
+      // set, update x and then break
+      if (hashSet.has(string))
+        return string;
+
+      // Else add element to hash set
+      else
+        hashSet.add(string);
+
+    }
+    return str;
+  }
+
 }
+
 
 let table = new HashTable(1024);
 
@@ -85,4 +109,8 @@ console.log(table.get('Mike'));
 console.log(table.contains('John'));
 console.log(table.contains('Peter'));
 
-module.exports = {HashTable, LinkedList, Node};
+let str = 'Louis, Mike, Jon';
+
+console.log('repeated Word', table.repeatedWord(str));
+
+module.exports = { HashTable, LinkedList, Node };

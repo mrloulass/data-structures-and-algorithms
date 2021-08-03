@@ -10,23 +10,33 @@ New Implementation
 - hash table store the information by the hash value . so if there's no collision , it would take O(1).  
 
 ## API
-Implement a Hashtable Class with methods
-- add()
-  - Arguments: key, value
-  - Returns: nothing
-  - This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
 
-- get()
-  - Arguments: key
-  - Returns: Value associated with that key in the table
+### Feature Tasks
 
-- contains()
-  - Arguments: key
-  - Returns: Boolean, indicating if the key exists in the table already.
+1. Implement a Hashtable Class with methods
 
-- hash()
-  - Arguments: key
-  - Returns: Index in the collection for that key
+  - add()
+    - Arguments: key, value
+    - Returns: nothing
+    - This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
+
+  - get()
+    - Arguments: key
+    - Returns: Value associated with that key in the table
+
+  - contains()
+    - Arguments: key
+    - Returns: Boolean, indicating if the key exists in the table already.
+
+  - hash()
+    - Arguments: key
+    - Returns: Index in the collection for that key
+
+2. Write a function called repeated word that finds the first word to occur more than once in a string
+
+  - repeatedWord()
+    - Arguments: string
+    - Return: string
 
 ## Testing
 
