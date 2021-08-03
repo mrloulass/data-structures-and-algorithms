@@ -49,6 +49,11 @@ The graph would be represented as an adjacency list, and include the following m
   - Arguments: none
   - Returns the total number of nodes in the graph
 
+- breadth First
+  - Arguments: Node(Vertex)
+  - Return: A collection of nodes in the order they were visited.
+  - Display the collection
+
 ## Testing
 
 Tests to prove the following functionality:
