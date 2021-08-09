@@ -26,7 +26,7 @@ class Graph {
   }
 
   addDirectedEdge(startVertex, endVertex, weight = 0) {
-    if(!this.adjacencyList.has(startVertex) || !this.adjacencyList.has(endVertex)) {
+    if (!this.adjacencyList.has(startVertex) || !this.adjacencyList.has(endVertex)) {
       throw Error('Invalid Vertices');
     }
 
@@ -46,7 +46,7 @@ class Graph {
 
     queue.push(startVertex);
     visitedNodes.add(startVertex);
-    while(queue.length) {
+    while (queue.length) {
       // take from the top of the queue while the queue had Nodes.
       const current = queue.shift();
       console.log(current.value);
@@ -79,8 +79,25 @@ class Graph {
     return [...this.adjacencyList.get(vertex)];
   }
 
-  size(){
+  size() {
     return this.adjacencyList.size;
+  }
+
+  businessTrip() {
+
+  }
+
+  depthFirst(startVertex, visited = new Set()) {
+    console.log(startVertex);
+    visited.add(startVertex);
+    const collections = this.adjacencyList.get(startVertex);
+    for (const collection of collections) {
+      if (collection === startVertex.value)
+        return;
+    }
+    if (!visited.has(this.collection)) {
+      this.depthFirst(this.collection, visited);
+    }
   }
 
 }
@@ -106,10 +123,10 @@ graph.addDirectedEdge(f, h);
 graph.addDirectedEdge(e, h);
 graph.addDirectedEdge(c, g);
 
-
+graph.depthFirst();
 console.log(graph.adjacencyList);
 console.log(graph.getNodes());
 console.log(graph.breadthFirst(a));
 console.log(graph.size());
-
-module.exports = {Vertex, Edge, Graph};
+console.log(graph.depthFirst());
+module.exports = { Vertex, Edge, Graph };
